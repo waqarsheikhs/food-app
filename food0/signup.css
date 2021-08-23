@@ -1,0 +1,114 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.signup-box {
+    width: 460px;
+    height: 800px;
+    margin: auto;
+    background-color: rgb(122, 115, 115);
+    border-radius: 5px;
+}
+
+.login-box {
+    width: 368px;
+    height: 340px;
+    margin: auto;
+    border-radius: 7px;
+    background-color: rgb(94, 71, 71);
+    position: relative;
+}
+
+.product-box {
+    width: 369px;
+    height: 630px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(70, 57, 57);
+    position: relative;
+    font-size: 29px;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 19px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.form {
+    width: 330px;
+    margin-left: 26px;
+}
+
+.form label {
+    display: flex;
+    margin-top: 27px;
+    font-size: 28px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 9px;
+    outline: none;
+}
+
+.btn {
+    width: 94%;
+    height: 38px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #059b75;
+    color: rgb(110, 80, 80);
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    left: 10%;
+
+}
+
+p {
+text-align: center;
+padding-top: 25px;
+font-size: 16px;
+}
+
+.para-2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.para-2 a {
+    color: rgb(105, 8, 8);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.btn a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    margin: 0%;
+    background-image: url(background.jpg);
+    position: relative;
+    height: 124vh;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+
+

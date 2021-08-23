@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+        
+        var firebaseConfig = {
+    apiKey: "AIzaSyC8Ot61cA_68pC7WtMM1s5hTq4_Z4Q32pQ",
+    authDomain: "food-84872.firebaseapp.com",
+    projectId: "food-84872",
+    storageBucket: "food-84872.appspot.com",
+    messagingSenderId: "866048709719",
+    appId: "1:866048709719:web:0da0565ed4fcbd4d5dbf12"
+  };
+        
+        firebase.initializeApp(firebaseConfig);
+        
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-box">
+            <h1>Add Product</h1>
+            <div class="form">
+
+                <label>Restaurant Name</label>
+                <input type="text" id="resname" placeholder="" required />
+
+
+                <label>Product Name</label>
+                <input type="text" id="prodname" placeholder="" required />
+
+                <label>Image</label>
+                <input type="file" id="prodimage" name="img" placeholder="" required />
+
+                <label>price</label>
+                <input type="text" id="prodprice" placeholder="" required />
+
+                <label>Type</label>
+                <input type="text" id="prodtype" placeholder="" required />
+
+                <button class="btn" onclick="addproduct()">Add </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+    <script>
+        
+        var firebaseConfig = {
+    apiKey: "AIzaSyC8Ot61cA_68pC7WtMM1s5hTq4_Z4Q32pQ",
+    authDomain: "food-84872.firebaseapp.com",
+    projectId: "food-84872",
+    storageBucket: "food-84872.appspot.com",
+    messagingSenderId: "866048709719",
+    appId: "1:866048709719:web:0da0565ed4fcbd4d5dbf12"
+  };
+        
+        firebase.initializeApp(firebaseConfig);
+        
+    </script>
+
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbarcustom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="addproduct.html">+ Add Product</a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+    <div class="header">
+        <h3>Your Products</h3>
+    </div>
+
+
+    <div id="admincards">
+
+    </div>
+  
+
+<!-- //Footer -->
+    <div class="footer">
+        <div class="containerfoot">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Popular searches</h4>
+                    <ul>
+                        <li><a href="#">Pizza Point</a></li>
+                        <li><a href="#">Jawaid Nehari</a></li>
+                        <li><a href="#">Khan Broast</a></li>
+                        <li><a href="#">Butler Cafe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="#">Fast Food</a></li>
+                        <li><a href="#">Desi Items</a></li>
+                        <li><a href="#">Healthy</a></li>
+                        <li><a href="#">Continental</a></li>
+                        <li><a href="#">Italian</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Trending Searches</h4>
+                    <ul>
+                        <li><a href="#">Burger</a></li>
+                        <li><a href="#">Pizza</a></li>
+                        <li><a href="#">Karahi</a></li>
+                        <li><a href="#">Nehari</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><FaFacebook size="30"/></a>
+                        <a href="#"><AiFillTwitterCircle size="30"/></a>
+                        <a href="#"><AiOutlineInstagram size="30"/></a>
+                        <a href="#"><TiSocialLinkedinCircular size="40"/></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+  
+    <script src="app.js"></script>
+</body>
+
+</html>
